@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { UseSelector, useSelector } from 'react-redux/es/hooks/useSelector';
+import {  useSelector } from 'react-redux/es/hooks/useSelector';
 import { deleteExp } from '../redux/expSlice';
 import {useDispatch} from "react-redux"
 
 //rsc
 function ExpenditureList(){
 
-  //useSelector((state)) => state.reducerNAme.expSliceName
+  //useSelector((state)) => state.reducerNAme.SliceName  or state.reducerNAme.SliceName-initialvaluename
   //We use useSelector to select the state we want
 
  const expenditureData= useSelector(((state)=>state.myExpenditure.expenditure))
